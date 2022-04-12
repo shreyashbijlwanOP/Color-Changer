@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@100;200;300;400;500;700&family=Ubuntu:wght@300&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+RGB(241, 245, 248)
+font-family: 'Ubuntu', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+nav{
+    background-color: white;
+    height: 3em;
+    z-index: 10;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-center
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: .5em;
+    margin:  auto;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 1em;
+
+}
+a{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.842);
+    
+}
+h3{
+    font-family: 'Poppins', sans-serif; 
+    color: RGB(119, 159, 202);
+    text-transform: uppercase;
+}
+nav a:hover
+{
+   color: rgb(119, 159, 202);
+}
+
+main{
+    z-index: -1;
+    background-color:RGB(241, 245, 248) ;
+    min-height: calc(100vh - 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease;
+}
+.container
+{
+    text-align: center;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif; 
+    padding: .5em;
+    background-color:  RGB(34, 34, 34);
+    color: white;
+    border-radius: .3em;
+    word-spacing: .3em;
+    letter-spacing: .1em;
+    font-size: 1.8rem;
+
+}
+span
+{
+    color:  RGB(73, 166, 233);
+    letter-spacing: .1em;
+    transition: color .8 ease;
+}
+.btn
+{
+    margin-top: 2em;
+    font-family: 'Ubuntu', sans-serif;;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--clr-black);
+    letter-spacing: .1em;
+    display: inline-block;
+    font-weight: 700;
+    border: 2px solid  RGB(34, 34, 34);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: .4em;
+    font-size: 1rem;
+    padding: 0.75rem 2.25rem;
+  }
+.btn:hover{
+    color: white;
+    background-color: RGB(34, 34, 34) ;
+    transition: background-color 0.8s ease;
+}
